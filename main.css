@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(85, 85, 85);
+  height: 114vw;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+width: 100%;
+}
+
+/* Nav start */
+.container {
+  max-width: auto;
+  margin: auto;
+}
+
+header {
+  background-color: black;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.95vw;
+  text-align: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: 'Lacquer';
+  font-size: 25px;
+  margin-right: 65px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+nav a:hover{
+  text-shadow: 0 0 10px #FFF;
+}
+
+nav button {
+background-color: initial;
+background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+border-radius: 6px;
+box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+color: #FFFFFF;
+font-family: 'Lacquer';
+font-size: 25px;
+height: 40px;
+padding: 0 20px;
+text-align: center;
+touch-action: manipulation;
+user-select: none;
+-webkit-user-select: none;
+vertical-align: top;
+white-space: nowrap;
+width: 150px;
+z-index: 9;
+border: 0;
+transition: box-shadow .2s;
+}
+
+nav button:hover {
+box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+text-shadow: 0 0 10px #FFF;
+}
+
+.logo a {
+  font-size: 38px;
+  font-family: 'Lacquer';
+  text-shadow: 0 0 10px #FFF;
+  text-align: center;
+}
+.logo a:hover{
+  text-shadow: 0 0 10px #ff0000;
+}
+/* Nav End */
+
+/* Slideshow Start */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides:nth-child(1){
+  display: block;
+}
+
+.mySlides img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dots {
+  position: relative;
+  top: -2.8rem;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* Slideshow End */
+
+/* Content Start */
+main {
+  background-color: black;
+  position: relative;
+  top: 34.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 1300px;
+  height: 1300px;
+  font-family: inter;
+}
+
+.best-con {
+padding: 25px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.best-con a {
+display: inline-block;
+text-decoration: none;
+color: #717171;
+font-size: 15px;
+padding: 1rem;
+}
+
+.best-con p {
+display: inline-block;
+text-decoration: none;
+color: #FFF;
+font-size: 18px;
+font-weight: bold;
+padding: 1rem;
+}
+
+.product-con {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  grid-gap: 0;
+}
+
+.product-items{
+  color: #fff;   
+}
+
+.product-items:hover {
+  box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.product-img {
+  width: 250px;
+  height: 250px;
+  scale: 0.7;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.product-img2 {
+  width: 270px;
+  height: 270px;
+  scale: 0.5;
+  object-fit: cover;
+}
+
+.product-detail {
+  padding: 1rem;
+}
+.product-detail2 {
+color: #fff;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+padding: 1rem;
+margin: 0 auto;
+display: block;
+}
+
+.product-price {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-left {
+  font-weight: bold;
+}
+
+.product-right {
+  color: #717171;
+}
+
+
+/* Content End */
+
+
+
+
+
+
+/* Footer Start */
+footer {
+background-color: rgb(40, 40, 40);
+position: relative;
+top: -3%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1;
+max-width: 1300px;
+height: 300px;
+color: #fff;
+}
+
+footer .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+footer .col-md-4 {
+padding: 2rem;
+}
+
+footer h4 {
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+footer p {
+font-size: 1rem;
+margin-bottom: 1rem;
+}
+
+footer ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+footer ul li {
+margin-bottom: 1rem;
+}
+
+footer ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+
+/* Footer End */
+
+/* Steam */
+@media screen and (max-width: 760px) {
+.l-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+
+.b-game-card {
+position: relative;
+z-index: 1;
+width: 280px;
+padding-bottom: 80%;
+perspective: 1000px;
+}
+.b-game-card__cover {
+position: absolute;
+z-index: 1;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+background-size: cover;
+perspective-origin: 50% 50%;
+transform-style: preserve-3d;
+transform-origin: top center;
+will-change: transform;
+transform: skewX(0.001deg);
+transition: transform 0.35s ease-in-out;
+}
+.b-game-card__cover::after {
+display: block;
+content: "";
+position: absolute;
+z-index: 100;
+top: 0;
+left: 0;
+width: 100%;
+height: 120%;
+background: linear-gradient(226deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 60%);
+transform: translateY(-20%);
+will-change: transform;
+transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+}
+.b-game-card:hover .b-game-card__cover {
+transform: rotateX(7deg) translateY(-6px);
+}
+.b-game-card:hover .b-game-card__cover::after {
+transform: translateY(0%);
+}
+.b-game-card::before {
+display: block;
+content: "";
+position: absolute;
+top: 5%;
+left: 5%;
+width: 90%;
+height: 90%;
+background: rgba(0, 0, 0, 0.5);
+box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.4);
+will-change: opacity;
+transform-origin: top center;
+transform: skewX(0.001deg);
+transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
+}
+.b-game-card:hover::before {
+opacity: 0.6;
+transform: rotateX(7deg) translateY(-6px) scale(1.05);
+}
+/* Steam */
+
+/* Add this at the end of your existing CSS */
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  /* Adjustments for screens up to 1200px wide */
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  main {
+    width: 90vw;
+    height: auto;
+  }
+
+  .slideshow-container {
+    max-width: 100%;
+  }
+
+  .mySlides img {
+    height: auto;
+  }
+
+  .product-con {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* Adjustments for screens up to 900px wide */
+  nav {
+    padding: 1vw;
+  }
+
+  nav a {
+    font-size: 3vw;
+    margin-right: 2vw;
+  }
+
+  nav button {
+    font-size: 3vw;
+    height: 8vw;
+    padding: 0 4vw;
+    width: 20vw;
+  }
+
+  .logo a {
+    font-size: 5vw;
+  }
+
+  .best-con {
+    padding: 2vw;
+  }
+
+  .best-con a {
+    font-size: 2.5vw;
+    padding: 1vw;
+  }
+
+  .best-con p {
+    font-size: 3vw;
+    padding: 1vw;
+  }
+
+  .product-items {
+    font-size: 2vw;
+  }
+
+  .product-detail {
+    padding: 1vw;
+  }
+
+  .product-detail2 {
+    font-size: 2vw;
+    padding: 1vw;
+  }
+
+  .product-price {
+    padding: 1vw;
+  }
+
+  footer {
+    height: 20vw;
+  }
+
+  footer h4 {
+    font-size: 2vw;
+  }
+
+  footer p {
+    font-size: 1.5vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .b-game-card {
+    width: 80vw;
+    padding-bottom: 50%;
+  }
+}
+
+/* Add more media queries as needed */
