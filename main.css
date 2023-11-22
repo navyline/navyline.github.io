@@ -54,7 +54,7 @@ nav a:hover{
   text-shadow: 0 0 10px #FFF;
 }
 
-nav button {
+.btn {
 background-color: initial;
 background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
 border-radius: 6px;
@@ -76,7 +76,7 @@ border: 0;
 transition: box-shadow .2s;
 }
 
-nav button:hover {
+.btn:hover {
 box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
 text-shadow: 0 0 10px #FFF;
 }
@@ -270,7 +270,53 @@ display: block;
   color: #717171;
 }
 
+.main {
 
+}
+
+.about {
+  background-image: url(https://www.halloweencostumes.com/content/images/hc/about/header-d.jpg);
+  width: 100%;
+  height: 500px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  position: relative;
+  padding: 13%;
+}
+
+.about h1 {
+  font-weight: bold;
+  font-size: 60px;
+
+}
+
+.about p{
+  color: #fff;
+  font-size: 35px;
+}
+
+.content {
+  width: 100%;
+  height: 500px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  position: relative;
+  padding: 10%;
+  font-size: 20px;
+}
+
+.contact {
+  width: 100%;
+  height: 500px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  position: relative;
+  padding: 10%;
+  font-size: 20px;
+}
 /* Content End */
 
 
